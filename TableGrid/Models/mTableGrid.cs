@@ -39,5 +39,8 @@ namespace TableGrid.Models
         [Range(18, 100, ErrorMessage = "Age must be between 18 and 100")]
         [Display(Name = "Age")]
         public int age { get; set; }
+
+        [Required(ErrorMessage = "Select a  date")]
+        public DateTime CreatedOn { get; set; }
     }
 }
